@@ -99,21 +99,6 @@
     "github.copilot.enable": {
         "*": false
     },
-    "go.useLanguageServer": true,
-    "go.formatTool": "goimports",
-    "go.lintOnSave": "package",
-    "[go]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "always"
-        }
-    },
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 120,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
     "python.analysis.typeCheckingMode": "standard",
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,

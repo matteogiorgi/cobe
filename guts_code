@@ -72,9 +72,8 @@ EOF
 ### Packages
 ############
 
-PACKAGES="git dash bash gnome-keyring fonts-cascadia-code libyaml-tiny-perl libfile-homedir-perl \
-build-essential gcc-doc gdb manpages-dev pkg-config valgrind strace ltrace default-jdk default-jdk-doc maven \
-golang delve python3-full python3-pip python3-dev black nodejs nodejs-doc npm pandoc texlive-full"
+PACKAGES="git dash bash gnome-keyring libyaml-tiny-perl libfile-homedir-perl \
+fonts-cascadia-code pandoc texlive-full python3-full python3-pip python3-dev black"
 for PKG in $PACKAGES; do
     if ! apt-get -s install "$PKG" >/dev/null 2>&1; then
         PROBLEMS="${PROBLEMS:+$PROBLEMS }$PKG"
@@ -130,10 +129,6 @@ for EXTENSION in \
     openai.chatgpt \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
-    vscjava.vscode-java-pack \
-    golang.go \
-    dbaeumer.vscode-eslint \
-    esbenp.prettier-vscode \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \
