@@ -125,7 +125,7 @@ rm -rf "$HOME/.config/Code/CachedExtensionVSIXs" \
 # ---
 printf "\n%s\n" "INSTALLING CODE EXTENSIONS"
 for EXTENSION in \
-    github.copilot \
+    github.copilot-chat \
     openai.chatgpt \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
