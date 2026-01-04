@@ -130,6 +130,7 @@ for EXTENSION in \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
     ms-vscode.cpptools \
+    ms-vscode.cmake-tools \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \
