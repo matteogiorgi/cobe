@@ -46,24 +46,23 @@ if [ "$(id -u)" -eq 0 ]; then
 fi
 # ---
 if ! command -v code >/dev/null 2>&1; then
-    printf "\n%s"   "═══════ WARNING: VSCode not found ══════"
-    printf "\n%s\n" "install VSCode and run this script again"
+    printf "\n%s"   "WARNING. VSCode not found: install VSCode and run this script"
+    printf "\n%s\n" "═══════  again."
     exit 1
 fi
 
 
 
 
-### Podeen-Code
-###############
+### COBE-Code
+#############
 
 cat << EOF
 
-              __                              __
-.-----.--.--.|  |_.-----.      .----.-----.--|  |.-----.
-|  _  |  |  ||   _|__ --|      |  __|  _  |  _  ||  -__|
-|___  |_____||____|_____| ____ |____|_____|_____||_____|
-|_____|
+             __                               __
+.----.-----.|  |--.-----.      .----.-----.--|  |.-----.
+|  __|  _  ||  _  |  -__|      |  __|  _  |  _  ||  -__|
+|____|_____||_____|_____| ____ |____|_____|_____||_____|
 
 EOF
 
@@ -73,8 +72,9 @@ EOF
 ### Packages
 ############
 
-PACKAGES="git dash bash gnome-keyring libyaml-tiny-perl libfile-homedir-perl fonts-cascadia-code pandoc texlive-full \
-python3-full python3-pip python3-dev black build-essential gcc-doc man-db cppman manpages-dev pkg-config gdb valgrind strace ltrace"
+PACKAGES="git gnome-keyring fonts-cascadia-code libyaml-tiny-perl libfile-homedir-perl \
+dash bash pandoc texlive-full python3-full python3-pip python3-dev black python-is-python3"
+
 for PKG in $PACKAGES; do
     if ! apt-get -s install "$PKG" >/dev/null 2>&1; then
         PROBLEMS="${PROBLEMS:+$PROBLEMS }$PKG"
@@ -130,8 +130,6 @@ for EXTENSION in \
     openai.chatgpt \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
-    ms-vscode.cpptools \
-    ms-vscode.cmake-tools \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \

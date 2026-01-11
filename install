@@ -15,15 +15,15 @@ run_installer() {
 
 
 
-### Puts-Install
+### COBE-Install
 ################
 
 cat << EOF
 
-This script installs GUTS (the "GUI UNIX Tools System") on
-your system. It will run just one installer: guts_code.
+This script installs COBE (the "COde Base Environment") on your
+system. It will run just one installer: cobe_code.
 ╔═════════╗
-║guts_code║ Installs all the basic packages you need and resets your
+║cobe_code║ Installs all the basic packages you need and resets your
 ╚═════════╝ VSCode configuration, plus it installs few extensions to
             make it as loose as a goose and ready to roll in no time.
 
@@ -36,6 +36,6 @@ EOF
 ########
 
 ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" 2>/dev/null && pwd)
-CODE_INSTALLER="$ROOT_DIR/guts_code"
+CODE_INSTALLER="$ROOT_DIR/cobe_code"
 # ---
 run_installer "$CODE_INSTALLER"
