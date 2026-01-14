@@ -7,7 +7,7 @@
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.startupPrompt": "never",
     "window.restoreWindows": "none",
-    "window.titleBarStyle": "custom",
+    "window.titleBarStyle": "native",
     "window.customTitleBarVisibility": "never",
     "window.menuBarVisibility": "compact",
     "window.menuStyle": "custom",
