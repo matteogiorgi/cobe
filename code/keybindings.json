@@ -1,5 +1,15 @@
 [
     {
+        "key": "alt+e",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+e",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
         "key": "alt+a",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
@@ -25,13 +35,11 @@
         "when": "inlineSuggestionVisible && !editorReadonly"
     },
     {
-        "key": "alt+e",
-        "command": "editor.action.marker.next",
-        "when": "editorFocus"
+        "key": "alt+d",
+        "command": "workbench.action.nextEditor"
     },
     {
-        "key": "alt+shift+e",
-        "command": "editor.action.marker.prev",
-        "when": "editorFocus"
+        "key": "alt+shift+d",
+        "command": "workbench.action.previousEditor"
     }
 ]
