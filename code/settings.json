@@ -140,6 +140,15 @@
         "editor.formatOnSave": true
     },
 
+    // R
+    "r.lsp.diagnostics": false,
+    "[r]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+
     // JUPYTER-NOTEBOOK
     "notebook.defaultFormatter": "ms-python.black-formatter",
     "notebook.formatOnSave.enabled": true,
