@@ -133,7 +133,6 @@ for EXTENSION in \
     openai.chatgpt \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
-    mermaidchart.vscode-mermaid-chart \
     ms-vscode-remote.remote-ssh \
     ms-vscode.cpptools \
     ms-vscode.cmake-tools \
