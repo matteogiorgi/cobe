@@ -87,6 +87,7 @@
 
     // WORKBENCH
     "workbench.editor.showTabs": "multiple",
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.startupEditor": "none",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.location": "bottom",
