@@ -131,6 +131,7 @@ printf "\n%s\n" "INSTALLING CODE EXTENSIONS"
 for EXTENSION in \
     github.copilot-chat \
     openai.chatgpt \
+    anthropic.claude-code \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
     ms-vscode-remote.remote-ssh \
