@@ -73,10 +73,8 @@ EOF
 ### Packages
 ############
 
-
 PACKAGES="git gnome-keyring fonts-cascadia-code libyaml-tiny-perl libfile-homedir-perl \
-libuv1-dev libxml2-dev libcurl4-openssl-dev libssl-dev bash pandoc texlive-full build-essential \
-cmake gcc-doc man-db cppman manpages-dev pkg-config valgrind gdb strace ltrace \
+libuv1-dev libxml2-dev libcurl4-openssl-dev libssl-dev bash pandoc texlive-full \
 python3-full python3-pip python3-dev black python-is-python3 r-base r-base-dev"
 # ---
 for PKG in $PACKAGES; do
@@ -130,13 +128,9 @@ rm -rf "$HOME/.config/Code/CachedExtensionVSIXs" \
 printf "\n%s\n" "INSTALLING CODE EXTENSIONS"
 for EXTENSION in \
     github.copilot-chat \
-    openai.chatgpt \
-    anthropic.claude-code \
     monokai.theme-monokai-pro-vscode \
     james-yu.latex-workshop \
     ms-vscode-remote.remote-ssh \
-    ms-vscode.cpptools \
-    ms-vscode.cmake-tools \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \
