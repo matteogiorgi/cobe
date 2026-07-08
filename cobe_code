@@ -75,7 +75,8 @@ EOF
 
 PACKAGES="git ssh bash gnome-keyring fonts-cascadia-code libyaml-tiny-perl libfile-homedir-perl \
 libuv1-dev libxml2-dev libcurl4-openssl-dev libssl-dev default-jdk default-jdk-doc maven gradle \
-python3-full python3-pip python3-dev black python-is-python3 r-base r-base-dev texlive-full pandoc"
+python3-full python3-pip python3-dev python3-doc black python-is-python3 r-base r-base-dev \
+nodejs nodejs-doc npm texlive-full pandoc"
 # ---
 for PKG in $PACKAGES; do
     if ! apt-get -s install "$PKG" >/dev/null 2>&1; then
@@ -137,6 +138,8 @@ for EXTENSION in \
     ms-toolsai.datawrangler \
     reditorsupport.r \
     rdebugger.r-debugger \
+    dbaeumer.vscode-eslint \
+    esbenp.prettier-vscode \
     james-yu.latex-workshop
 do
     printf "%s" "installing '$EXTENSION'"
@@ -146,6 +149,7 @@ done
 BASE="$HOME/.config/Code/User"
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )" || exit 1
 cat "$SCRIPTPATH/code/.lintr" > "$HOME/.lintr"
+cat "$SCRIPTPATH/code/.prettierrc" > "$HOME/.prettierrc"
 if mkdir -p "$BASE"; then
     cat "$SCRIPTPATH/code/settings.json" > "$BASE/settings.json"
     cat "$SCRIPTPATH/code/keybindings.json" > "$BASE/keybindings.json"
