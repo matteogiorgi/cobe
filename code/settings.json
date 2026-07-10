@@ -76,8 +76,12 @@
     "terminal.integrated.allowChords": false,
     "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.gpuAcceleration": "off",
-    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.linux": "dash",
     "terminal.integrated.profiles.linux": {
+        "dash": {
+            "icon": "terminal-debian",
+            "path": ["/bin/dash", "/usr/bin/dash"]
+        },
         "bash": {
             "icon": "terminal-bash",
             "path": ["/bin/bash", "/usr/bin/bash"],
