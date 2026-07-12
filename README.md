@@ -9,9 +9,9 @@ This repository contains configuration files and installation scripts for a quic
 
 The only prerequisite you need to cover is a working *Debian* in any version or form. There is just one installer at your disposal: [`cobe_code`](https://github.com/matteogiorgi/cobe/blob/main/cobe_code).
 
-> The installer do not symlink any file, it just copy the configurations in the right place, so they can be easily modified end eventually resetted running the installer again.
+> The installer does not symlink any file, it just copies the configurations in the right place, so they can be easily modified and eventually reset running the installer again.
 
-To full install COBE, lunch the installer (as described below) or just run the [`install`](https://github.com/matteogiorgi/cobe/blob/main/install) script, it will execute the installer for you.
+To full install COBE, launch the installer (as described below) or just run the [`install`](https://github.com/matteogiorgi/cobe/blob/main/install) script, it will execute the installer for you.
 
 
 
