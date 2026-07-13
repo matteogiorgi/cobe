@@ -139,10 +139,10 @@
     },
 
     // PYTHON
-    "python.analysis.typeCheckingMode": "standard",
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,
     "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "standard",
     "python.analysis.diagnosticMode": "openFilesOnly",
     "python.analysis.diagnosticsSource": "Pylance",
     "[python]": {
@@ -151,7 +151,6 @@
     },
 
     // R
-    "r.lsp.diagnostics": false,
     "[r]": {
         "editor.defaultFormatter": "REditorSupport.r",
         "editor.formatOnSave": true
@@ -164,7 +163,6 @@
     },
 
     // JUPYTER-NOTEBOOK
-    "notebook.defaultFormatter": "ms-python.black-formatter",
     "notebook.formatOnSave.enabled": true,
     "notebook.stickyScroll.enabled": true,
     "notebook.outline.showCodeCells": true,
