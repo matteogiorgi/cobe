@@ -118,15 +118,6 @@
         "*": false
     },
 
-    // GO
-    "[go]": {
-        "editor.defaultFormatter": "golang.go",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
-    },
-
     // JAVA
     "java.completion.importOrder": ["java", "javax", "com", "org", ""],
     "java.configuration.updateBuildConfiguration": "automatic",
@@ -147,12 +138,6 @@
     "python.analysis.diagnosticsSource": "Pylance",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
-    },
-
-    // R
-    "[r]": {
-        "editor.defaultFormatter": "REditorSupport.r",
         "editor.formatOnSave": true
     },
 

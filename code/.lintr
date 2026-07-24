@@ -1,5 +1,0 @@
-encoding: "UTF-8"
-linters: linters_with_defaults(
-    indentation_linter = NULL,
-    line_length_linter = lintr::line_length_linter(120)
-    )
