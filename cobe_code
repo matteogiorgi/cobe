@@ -146,7 +146,6 @@ done
 # ---
 BASE="$HOME/.config/Code/User"
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )" || exit 1
-cat "$SCRIPTPATH/code/.lintr" > "$HOME/.lintr"
 cat "$SCRIPTPATH/code/.prettierrc" > "$HOME/.prettierrc"
 if mkdir -p "$BASE"; then
     cat "$SCRIPTPATH/code/settings.json" > "$BASE/settings.json"
