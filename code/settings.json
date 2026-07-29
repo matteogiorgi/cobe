@@ -130,7 +130,6 @@
     },
 
     // SCALA
-    "metals.serverVersion": "latest.release",
     "[scala]": {
         "editor.defaultFormatter": "scalameta.metals",
         "editor.formatOnSave": true
