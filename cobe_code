@@ -74,10 +74,14 @@ EOF
 ############
 
 PACKAGES="\
-git gh ssh dash bash gnome-keyring fonts-cascadia-code \
+git gh ssh gnome-keyring fonts-cascadia-code \
+build-essential gdb \
+golang \
 default-jdk maven gradle \
-python3-full python3-pip python-is-python3 \
 nodejs npm \
+r-base r-base-dev \
+python3-full python3-pip python-is-python3 \
+dash bash shellcheck shfmt \
 texlive-full pandoc libyaml-tiny-perl libfile-homedir-perl"
 # ---
 for PKG in $PACKAGES; do
@@ -133,14 +137,17 @@ for EXTENSION in \
     github.copilot-chat \
     monokai.theme-monokai-pro-vscode \
     ms-vscode-remote.remote-ssh \
+    ms-vscode.cpptools \
+    golang.go \
     vscjava.vscode-java-pack \
     scalameta.metals \
-    ms-python.python \
-    ms-python.black-formatter \
-    ms-toolsai.jupyter \
-    ms-toolsai.datawrangler \
     dbaeumer.vscode-eslint \
     esbenp.prettier-vscode \
+    reditorsupport.r \
+    rdebugger.r-debugger \
+    ms-python.python \
+    ms-python.black-formatter \
+    mads-hartmann.bash-ide-vscode \
     james-yu.latex-workshop
 do
     printf "%s" "installing '$EXTENSION'"
@@ -150,6 +157,7 @@ done
 BASE="$HOME/.config/Code/User"
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )" || exit 1
 cat "$SCRIPTPATH/code/.prettierrc" > "$HOME/.prettierrc"
+cat "$SCRIPTPATH/code/.lintr" > "$HOME/.lintr"
 if mkdir -p "$BASE"; then
     cat "$SCRIPTPATH/code/settings.json" > "$BASE/settings.json"
     cat "$SCRIPTPATH/code/keybindings.json" > "$BASE/keybindings.json"

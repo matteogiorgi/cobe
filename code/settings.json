@@ -118,6 +118,26 @@
         "*": false
     },
 
+    // C/C++
+    "C_Cpp.formatting": "vcFormat",
+    "C_Cpp.vcFormat.indent.caseLabels": false,
+    "C_Cpp.vcFormat.newLine.beforeElse": true,
+    "C_Cpp.vcFormat.space.beforeFunctionOpenParenthesis": "remove",
+    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "right",
+    "[c][cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true
+    },
+
+    // GO
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
     // JAVA
     "java.completion.importOrder": ["java", "javax", "com", "org", ""],
     "java.configuration.updateBuildConfiguration": "automatic",
@@ -135,6 +155,18 @@
         "editor.formatOnSave": true
     },
 
+    // JAVASCRIPT
+    "[javascript][json][jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    // R
+    "[r]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.formatOnSave": true
+    },
+
     // PYTHON
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,
@@ -147,17 +179,9 @@
         "editor.formatOnSave": true
     },
 
-    // JUPYTER-NOTEBOOK
-    "notebook.formatOnSave.enabled": true,
-    "notebook.stickyScroll.enabled": true,
-    "notebook.outline.showCodeCells": true,
-    "notebook.showFoldingControls": "always",
-    "notebook.insertToolbarLocation": "hidden",
-    "notebook.cellToolbarVisibility": "hover",
-
-    // JAVASCRIPT
-    "[javascript][json][jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // BASH
+    "[shellscript]": {
+        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode",
         "editor.formatOnSave": true
     },
 
