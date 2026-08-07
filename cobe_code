@@ -76,7 +76,7 @@ EOF
 PACKAGES="\
 git gh ssh gnome-keyring fonts-cascadia-code \
 build-essential gdb \
-golang \
+golang gopls \
 default-jdk maven gradle \
 nodejs npm \
 r-base r-base-dev \
