@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run go",
+            "type": "shell",
+            "command": "go run ${file}",
+            "presentation": { "clear": true, "focus": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "run js",
+            "type": "shell",
+            "command": "node ${file}",
+            "presentation": { "clear": true, "focus": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "run bash",
+            "type": "shell",
+            "command": "bash ${file}",
+            "presentation": { "clear": true, "focus": true },
+            "problemMatcher": []
+        }
+    ]
+}

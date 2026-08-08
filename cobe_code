@@ -161,6 +161,7 @@ cat "$SCRIPTPATH/code/.lintr" > "$HOME/.lintr"
 if mkdir -p "$BASE"; then
     cat "$SCRIPTPATH/code/settings.json" > "$BASE/settings.json"
     cat "$SCRIPTPATH/code/keybindings.json" > "$BASE/keybindings.json"
+    cat "$SCRIPTPATH/code/tasks.json" > "$BASE/tasks.json"
 fi
 
 
