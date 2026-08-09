@@ -5,6 +5,29 @@ This repository contains configuration files and installation scripts for a quic
 
 
 
+## What you get
+
+Running the installer gives you a clean, ready-to-code *VSCode* setup: system packages and build tools, a curated set of extensions, and preconfigured settings, keybindings and formatters — all sourced from this repo, so nothing is left to guesswork.
+
+Supported languages / tooling, each with its own formatter and extension:
+
+| Language / Tool   | Extension                                           | Formatter                |
+| ----------------- | --------------------------------------------------- | ------------------------ |
+| C / C++           | `ms-vscode.cpptools`                                | vcFormat                 |
+| Go                | `golang.go`                                         | gofmt (via Go extension) |
+| Java              | `vscjava.vscode-java-pack`                          | Red Hat Java formatter   |
+| Scala             | `scalameta.metals`                                  | Metals                   |
+| JavaScript / JSON | `dbaeumer.vscode-eslint` + `esbenp.prettier-vscode` | Prettier                 |
+| R                 | `reditorsupport.r` (+ `rdebugger.r-debugger`)       | lintr                    |
+| Python            | `ms-python.python`                                  | Black                    |
+| Bash / shell      | `mads-hartmann.bash-ide-vscode`                     | bash-ide formatter       |
+| LaTeX             | `james-yu.latex-workshop`                           | latexindent              |
+
+On top of that, `cobe_code` also brings in `git`, `gh`, `ssh`, the GitHub Copilot Chat extension, the Monokai Pro theme, and Remote-SSH support.
+
+
+
+
 ## Install
 
 The only prerequisite you need to cover is a working *Debian* in any version or form. There is just one installer at your disposal: [`cobe_code`](https://github.com/matteogiorgi/cobe/blob/main/cobe_code).
