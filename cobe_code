@@ -134,7 +134,6 @@ rm -rf "$HOME/.config/Code/CachedExtensionVSIXs" \
 # ---
 printf "\n%s\n" "INSTALLING CODE EXTENSIONS"
 for EXTENSION in \
-    github.copilot-chat \
     monokai.theme-monokai-pro-vscode \
     ms-vscode-remote.remote-ssh \
     ms-vscode.cpptools \
