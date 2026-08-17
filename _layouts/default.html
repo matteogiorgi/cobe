@@ -2,9 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
     <head>
         <meta charset="UTF-8">
-        <!-- Must precede the script below: it looks this up by id, so it
-             needs to already be parsed. -->
-        <link rel="icon" id="favicon" type="image/svg+xml" href="https://geoteo.net/static/favicon.svg">
+        <!-- No static <link rel="icon"> here on purpose: some browsers latch
+             onto whichever icon they see first while parsing and ignore later
+             DOM changes to it on reload, so the script below (the first thing
+             in <head>) must be the only thing that ever creates that link. -->
         <script>
             (function () {
                 window.applyTheme = function () {
