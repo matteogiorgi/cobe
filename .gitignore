@@ -1,2 +1,10 @@
 **/tags
 .vscode
+
+# Local Jekyll preview only (see _config.yml comment), not part of the site
+_config.yml
+_site/
+.jekyll-cache/
+vendor/
+Gemfile
+Gemfile.lock
