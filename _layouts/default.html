@@ -16,8 +16,6 @@
                         : 'https://geoteo.net/static/favicon.svg';
                     var icon = document.getElementById('favicon');
                     if (icon) icon.href = src;
-                    var footerIcon = document.getElementById('footer-icon');
-                    if (footerIcon) footerIcon.src = src;
                 };
                 applyTheme();
                 window.addEventListener('pageshow', function (e) {
@@ -55,7 +53,7 @@
                 {{ content }}
             </main>
             <p class="gh-footer">
-                <span>Powered by <a href="https://geoteo.net"><img id="footer-icon" src="https://geoteo.net/static/favicon.svg" alt="G">eoteo.net</a></span>
+                <span>Powered by <a href="https://geoteo.net">geoteo.net</a></span>
                 <span><a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a> on GitHub</span>
             </p>
         </div>
