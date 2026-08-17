@@ -11,9 +11,13 @@
                     var t = localStorage.getItem('theme');
                     if (t) document.documentElement.setAttribute('data-theme', t);
                     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+                    // The query string is load-bearing: browsers cache the tab
+                    // favicon per page URL and often won't re-fetch it on reload
+                    // just because the <link> href changed, so each theme needs
+                    // a genuinely distinct URL to force a fresh icon.
                     var src = dark
-                        ? 'https://geoteo.net/static/favicon-dark.svg'
-                        : 'https://geoteo.net/static/favicon.svg';
+                        ? 'https://geoteo.net/static/favicon-dark.svg?theme=dark'
+                        : 'https://geoteo.net/static/favicon.svg?theme=light';
                     var old = document.getElementById('favicon');
                     if (old) old.remove();
                     var icon = document.createElement('link');
