@@ -51,6 +51,7 @@ This script installs all the basic packages you need and resets your *VSCode* co
 ## No-Install
 
 If you don't want to run any installer, you can just copy the main configuration files with the following command and you got yourself just the *VSCode* dotfiles. Copy-pasta this in your terminal and hit enter 😎
+
 ```sh
 sh -c '
     BASE="https://raw.githubusercontent.com/matteogiorgi/cobe/refs/heads/main/code"
