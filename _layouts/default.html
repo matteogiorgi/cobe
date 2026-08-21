@@ -70,6 +70,14 @@
                 document.querySelectorAll('.markdown-body pre').forEach(function (pre) {
                     var code = pre.querySelector('code');
                     if (!code) return;
+                    var langWrapper = pre.closest('[class*="language-"]');
+                    var langMatch = langWrapper && langWrapper.className.match(/language-(\S+)/);
+                    if (langMatch && langMatch[1] !== 'plaintext') {
+                        var label = document.createElement('span');
+                        label.className = 'code-lang';
+                        label.textContent = langMatch[1];
+                        pre.appendChild(label);
+                    }
                     var btn = document.createElement('button');
                     btn.type = 'button';
                     btn.className = 'copy-btn';
