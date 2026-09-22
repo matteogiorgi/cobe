@@ -1,8 +1,7 @@
 **/tags
 .vscode
 
-# Local Jekyll preview only (see _config.yml comment), not part of the site
-_config.yml
+# Local Jekyll preview only, not part of the site
 _site/
 .jekyll-cache/
 vendor/
